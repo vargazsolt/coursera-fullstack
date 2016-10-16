@@ -16,23 +16,25 @@
     </style>
   </head>
 <body>
-   <div class="container" ng-controller="LunchCheckController">
-     <h1>Lunch Checker</h1>
+  <div class="container" ng-controller="LunchCheckController">
+    <h1>Lunch Checker</h1>
 
-         <div class="form-group">
-             <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             ng-model="food"
-             class="form-control {{state}}">
-             <p class="desc">Empty items don't count!</p>
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
-         </div>
-         <div class="form-group message message-{{state}}">
-         {{message}}
-         </div>
-   </div>
+    <div class="form-group">
+      <input id="lunch-menu" type="text"
+      placeholder="list comma separated dishes you usually have for lunch"
+      ng-model="food"
+      class="form-control {{state}}">
+      <p class="desc">Empty items don't count!</p>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
+    </div>
+    <div class="form-group message message-{{state}}">
+      {{message}}
+    </div>
+
+    <footer><a href="https://github.com/vargazsolt/coursera-fullstack/archive/master.zip">Download code from Github</a></footer>
+  </div>
 
 </body>
 </html>

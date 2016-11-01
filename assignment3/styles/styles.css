@@ -1,0 +1,50 @@
+h1 {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+
+footer {
+  border-top: 1px solid #bdbdbd;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+content:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.found-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.found-list-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.found-list div.short_name {
+  margin: 0 10px;
+}
+
+.found-list div.description {
+  color: #888;
+  font-style: italic;
+  width: 400px;
+}
+
+.found-list div, .found-list button {
+  float: left;
+}
+
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
